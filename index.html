@@ -17,7 +17,7 @@
     //
     function replaceHeaderImage() {
         iabRef.executeScript({
-            code: "var img=document.querySelector('#header img'); img.src='http://cordova.apache.org/images/cordova_bot.png';"
+            code: "var username = document.getElementsByName('username').value;var password = document.getElementsByName('password').value; username.value = 'adskguest';password.vaue= 'adskguest';"
         }, function() {
             alert("Image Element Successfully Hijacked");
         });
