@@ -17,7 +17,7 @@
     //
     function replaceHeaderImage() {
         iabRef.executeScript({
-            code: "var username = document.getElementsByName('username').value;var password = document.getElementsByName('password').value; username.value = 'adskguest';password.vaue= 'adskguest';"
+            code: "var test = 1;/*var username = document.getElementsByName('username').value;var password = document.getElementsByName('password').value; username.value = 'adskguest';password.vaue= 'adskguest';*/"
         }, function() {
             alert("Image Element Successfully Hijacked");
         });
@@ -31,9 +31,9 @@
     // device APIs are available
     //
     function onDeviceReady() {
-         iabRef = window.open('https://1.1.1.1/login.html', '_blank', 'location=yes');
-         iabRef.addEventListener('loadstop', replaceHeaderImage);
-         iabRef.addEventListener('exit', iabClose);
+         iabRef = window.open('http://ol3js.org/en/master/examples/mobile-full-screen.html', '_blank', 'location=yes');
+         /*iabRef.addEventListener('loadstop', replaceHeaderImage);
+         iabRef.addEventListener('exit', iabClose);*/
     }
 
     </script>
